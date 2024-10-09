@@ -9,18 +9,15 @@ public class Temperatura {
     public static void main(String[] args) {
         double C; // temperatura em Celsius
         double F; // temperatura em Fahrenheit
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Faça a conversão de Celsius para Fahrenheit. ");
-        System.out.println("Temperatura em Celcius (°C): ");
-        C = scanner.nextDouble();
-
-        F = ((9 * C) + 160) / 5;
-
-        System.out.println("\n" + C + " °C\n" + F + " °F");
-        
-        scanner.close();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Faça a conversão de Celsius para Fahrenheit. ");
+            System.out.println("Temperatura em Celcius (°C): ");
+            C = scanner.nextDouble();
+            
+            F = ((9 * C) + 160) / 5;
+            
+            System.out.println("\n" + C + " °C\n" + F + " °F");
+        }
     }
 }
 

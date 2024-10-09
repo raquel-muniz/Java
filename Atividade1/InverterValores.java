@@ -11,25 +11,23 @@ public class InverterValores {
         float B;
         float Troca;
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Efetue a troca de valores A para B e vice-versa!");
-
-        System.out.println("Digite o valor para a variável A: ");
-        A = scanner.nextFloat();
-
-        System.out.println("Digite o valor para a variável A: ");
-        B = scanner.nextFloat();
-
-        //inversão 
-
-        Troca = A; // reserva o valor da variável A
-        A = B;
-        B = Troca;
-
-        System.out.println("A: " + A + "\n" + "B: " + B);
-        
-        scanner.close();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Efetue a troca de valores A para B e vice-versa!");
+            
+            System.out.println("Digite o valor para a variável A: ");
+            A = scanner.nextFloat();
+            
+            System.out.println("Digite o valor para a variável A: ");
+            B = scanner.nextFloat();
+            
+            //inversão
+            
+            Troca = A; // reserva o valor da variável A
+            A = B;
+            B = Troca;
+            
+            System.out.println("A: " + A + "\n" + "B: " + B);
+        }
 
     }
 }

@@ -10,19 +10,17 @@ public class Cotacao {
         double cotacao;
 
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Converta dólar para Real! ");
-        System.out.println("Valor em Dólar: ");
-        Dolar = scanner.nextDouble();
-
-        System.out.println("Valor da cotação do Dólar: ");
-        cotacao = scanner.nextDouble();
-
-        Real = Dolar * cotacao;
-
-        System.out.println("Valor em Reais (convertido): " + Real);
-        
-        scanner.close();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Converta dólar para Real! ");
+            System.out.println("Valor em Dólar: ");
+            Dolar = scanner.nextDouble();
+            
+            System.out.println("Valor da cotação do Dólar: ");
+            cotacao = scanner.nextDouble();
+            
+            Real = Dolar * cotacao;
+            
+            System.out.println("Valor em Reais (convertido): " + Real);
+        }
     }
 }

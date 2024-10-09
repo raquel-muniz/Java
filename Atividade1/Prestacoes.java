@@ -9,21 +9,19 @@ public class Prestacoes {
         double Prestacoes; 
 
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Veja o valor das prestações sem juros! ");
-        System.out.println("Valor da Compra: ");
-        Valor_Compra = scanner.nextDouble();
-
-
-        System.out.println("De cada prestação: ");
-
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Veja o valor das prestações sem juros! ");
+            System.out.println("Valor da Compra: ");
+            Valor_Compra = scanner.nextDouble();
+            
+            
+            System.out.println("De cada prestação: ");
+            
             for (int i = 1; i < 6; i++){
                 Prestacoes = Valor_Compra / i;
 
                 System.out.println("Em " + i + " prestações de " + Prestacoes);
             }
-        
-        scanner.close();
+        }
     }
 }
