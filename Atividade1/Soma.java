@@ -14,7 +14,7 @@ public class Soma {
             System.out.println("Digite o segundo número: ");
             y = scanner.nextInt();
             
-            soma = x + y;
+            soma = x + y; // sum 2 values
             
             System.out.println("O resultado da soma é: " + soma);
         }

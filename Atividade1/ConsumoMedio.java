@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class ConsumoMedio {
+public class ConsumoMedio { 
 
     public static void main(String[] args) {
         float combustivel;

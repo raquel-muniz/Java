@@ -5,7 +5,7 @@
 import java.util.Scanner;
 
 public class Temperatura {
-
+ // convert the temperature from Celsius to Fahrenheit
     public static void main(String[] args) {
         double C; // temperatura em Celsius
         double F; // temperatura em Fahrenheit

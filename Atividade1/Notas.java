@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Notas {
 
-    //grades
+    //grades calculate
     public static void main(String[] args) {
         double nota1;
         double nota2;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Operacoes {
+public class Operacoes { //operations
 
     public static void main(String[] args) {
         int x;
@@ -13,11 +13,11 @@ public class Operacoes {
 
 
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Digite dois números para a solução de algumas operações! ");
-            System.out.println("Primeiro número: ");
+            System.out.println("Digite dois números para a solução de algumas operações! "); //press 2 numbers to calculate
+            System.out.println("Primeiro número: "); // first
             x = scanner.nextInt();
             
-            System.out.println("Segundo número: ");
+            System.out.println("Segundo número: "); // second
             y = scanner.nextInt();
             
             soma = x + y;

@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Prestacoes {
+public class Prestacoes { // buy something and do not pay extra for the time
 
     public static void main(String[] args) {
         double Valor_Compra;
@@ -10,12 +10,12 @@ public class Prestacoes {
 
 
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Veja o valor das prestações sem juros! ");
-            System.out.println("Valor da Compra: ");
+            System.out.println("Veja o valor das prestações sem juros! "); // price
+            System.out.println("Valor da Compra: "); // total
             Valor_Compra = scanner.nextDouble();
             
             
-            System.out.println("De cada prestação: ");
+            System.out.println("De cada prestação: "); // divide and do not sum anything more
             
             for (int i = 1; i < 6; i++){
                 Prestacoes = Valor_Compra / i;
