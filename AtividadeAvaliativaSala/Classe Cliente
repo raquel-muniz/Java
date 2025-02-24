@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+
+class Cliente {
+    private String nome;
+    private int telefone;
+    private String endereco;
+
+
+    public Cliente(String nome, int telefone, String endereco) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.endereco = endereco;
+    }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String toString() {
+        return "Nome: " + nome + ", Telefone: " + telefone + ", Endereço: " + endereco;
+    }
+}
+
+class GerenciamentoDeClientes {
+    private ArrayList<Cliente> clientes = new ArrayList<>();
+
+
+    public void registrarCliente(String nome, int telefone, String endereco) {
+        Cliente cliente = new Cliente(nome, telefone, endereco);
+        clientes.add(cliente);
+    }
+
+ 
+    public void exibirClientes() {
+        if (clientes.isEmpty()) {
+            System.out.println("Nenhum cliente registrado.");
+        } else {
+            for (Cliente cliente : clientes) {
+                System.out.println(cliente);
+            }
+        }
+    }
+
+    public Cliente encontrarCliente(String nome) {
+        for (Cliente cliente : clientes) {
+            if (cliente.getNome().equals(nome)) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+}

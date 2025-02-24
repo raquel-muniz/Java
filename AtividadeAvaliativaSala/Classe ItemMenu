@@ -1,0 +1,43 @@
+public class ItemMenu {
+    private String nomePedido;
+    private double preco;
+    private String categoria;
+
+
+    public ItemMenu(String nomePedido, double preco, String categoria) {
+        this.nomePedido = nomePedido;
+        this.preco = preco;
+        this.categoria = categoria;
+    }
+
+
+    public String getNomePedido() {
+        return nomePedido;
+    }
+
+    public void setNomePedido(String nomePedido) {
+        this.nomePedido = nomePedido;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public void mostrarDetalhes() {
+        System.out.println("Nome do Pedido: " + nomePedido);
+        System.out.println("Preço: R$ " + preco);
+        System.out.println("Categoria: " + categoria);
+    }
+

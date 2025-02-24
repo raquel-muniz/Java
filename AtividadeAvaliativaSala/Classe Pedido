@@ -1,0 +1,50 @@
+class Pedido {
+    private Cliente cliente;
+    private ArrayList<ItemMenu> itens;
+    private double total;
+    private String status;
+
+
+    public Pedido(Cliente cliente) {
+        this.cliente = cliente;
+        this.itens = new ArrayList<>();
+        this.total = 0.0;
+        this.status = "Em preparação";
+    }
+
+
+    public void adicionarItem(ItemMenu item) {
+        itens.add(item);
+        total += item.getPreco();
+    }
+
+ 
+    public void calcularTotal() {
+        total = 0.0;
+        for (ItemMenu item : itens) {
+            total += item.getPreco();
+        }
+    }
+
+
+    public void atualizarStatus(String novoStatus) {
+        this.status = novoStatus;
+    }
+
+
+    public String verificarStatus() {
+        return this.status;
+    }
+
+    public String toString() {
+        StringBuilder detalhes = new StringBuilder();
+        detalhes.append("Cliente: ").append(cliente).append("\n");
+        detalhes.append("Itens:\n");
+        for (ItemMenu item : itens) {
+            detalhes.append("- ").append(item.getNomePedido()).append(": R$ ").append(item.getPreco()).append("\n");
+        }
+        detalhes.append("Total: R$ ").append(total).append("\n");
+        detalhes.append("Status: ").append(status).append("\n");
+        return detalhes.toString();
+    }
+}
