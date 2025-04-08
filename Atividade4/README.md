@@ -1,7 +1,9 @@
 # JAVA - Atividade2
+
 4° Semestre
 
-*FUNCIONALIDADES OBRIGATÓRIAS*
+FUNCIONALIDADES OBRIGATÓRIAS*
+
 1. Cadastrar um novo cliente:
       Implementar uma funcionalidade que permita inserir um novo cliente no sistema, coletando as informações essenciais como Nome, E-mail, Telefone, e demais campos criados por cada grupo.
 
@@ -15,8 +17,7 @@ Incluir uma opção para pesquisar um cliente específico pelo cliente_id.
 4. Excluir um cliente:
       Implementar uma funcionalidade para deletar um cliente do sistema, solicitando o cliente_id como referência.
 
-
-*Requisitos do Projeto*
+Requisitos do Projeto
 
 1. Estrutura do Projeto:
    Criar uma classe Cliente que representará a estrutura dos dados do cliente, com atributos identificados anteriormente.
@@ -32,7 +33,3 @@ Incluir uma opção para pesquisar um cliente específico pelo cliente_id.
 
 4. Interface de Usuário:
    Tela padrão através do JAVA console.
-
-
-
-   
